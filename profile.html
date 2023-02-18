@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="profile.css">
+    <title>Profile</title>
+</head>
+<body>
+    <header class="profilePageHeader">
+        <div class="profilepageHeader">
+            <h1 class="ProfilepageHeading">Your Profile</h1>
+        </div>
+    </header>
+    <main class="profilePageMain">
+        <div class="ProfilepageBody">
+            <div class="ProfileImage">
+                <img src="images/defaultprofileimage.webp" id="ProfileImage" alt="profile image not avialable">
+            </div>
+            <form action="" class="profilePageForm">
+                <div class="ProfilepageInfo">  
+                    <!-- Personal Info -->
+                    <div class="PersonalInfoFields">
+                        <h2 style="padding: 0.375rem 0.75rem;">Personal Informations</h2>
+                        <div class="form-group name">
+                            <div class="input-field-div col-2" >
+                                <label class="form-label" for="first-name">First Name</label>
+                                <input class="form-control" type="text" id="first-name">
+                            </div >
+                            <div class="input-field-div col-2" >
+                                <label class="form-label" for="Last-name" >Last Name</label>
+                                <input class="form-control" type="text" id="Last-name">
+                            </div>
+                        </div>
+                        <div class="form-group email">
+                            <div class="input-field-div col-2">
+                                <label class="form-label" for="email">Email</label>
+                                <input class="form-control" type="email" id="email">
+                            </div>
+                            <div class="input-field-div col-2">
+                                <label class="form-label" for="phone">Phone</label>
+                                <input class="form-control" type="number" id="phone">
+                            </div>
+                        </div>
+                        <div class="form-group ">
+                            <div class="input-field-div col-1">
+                                <label class="form-label" for="add">Address</label>
+                                <input class="form-control" type="text" id="add">
+                            </div>
+                        </div>
+                        <div class="form-group standardadd">
+                            <div class="input-field-div col-3">
+                                <label class="form-label" for="city">City</label>
+                                <input class="form-control" type="text" id="city">
+                            </div>
+                            <div class="input-field-div col-3">
+                                <label class="form-label" for="state">State</label>
+                                <input class="form-control" type="text" id="state">
+                            </div>
+                            <div class="input-field-div col-3">
+                                <label class="form-label" for="zip">Zip</label>
+                                <input class="form-control" type="number" id="zip">
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <!-- Body Info -->
+                    <div class="BodyInfoFields">
+                        <h2 style="padding: 0.375rem 0.75rem;">Body Informations</h2>
+                        <div class="form-group height-weight">
+                            <div class="input-field-div col-2">
+                                <label class="form-label" for="height">Height <small>(in Kg)</small> </label>
+                                <input class="form-control" type="number" class="input-box-size-50" id="height" step="0.01">
+                            </div>
+                            <div class="input-field-div col-2">
+                                <label class="form-label" for="weight">Weight <small>(in cm)</small></label>
+                                <input class="form-control" type="number" class="input-box-size-50" id="weight" step="0.01">    
+                            </div>
+                        </div>
+                        <div class="form-group chest">
+                            <div class="input-field-div col-1">
+                                <label class="form-label" for="chest">Chest <small>(in cm)</small> </label>
+                                <input class="form-control" type="number" id="chest" step="0.01">
+                            </div>
+                        </div>
+                        <div class="form-group Arm">
+                            <div class="input-field-div col-2">
+                                <label class="form-label" for="bicep">Bicep <small>(in cm)</small></label>
+                                <input class="form-control" type="number" id="bicep" step="0.01">
+                            </div>
+                            <div class="input-field-div col-2">
+                                <label class="form-label" for="wrist">Wrist <small>(in cm)</small></label>
+                                <input class="form-control" type="number" id="wrist" step="0.01">
+                            </div>
+                        </div>
+                        <div class="form-group lowerbody">
+                            <div class="input-field-div col-3">
+                                <label class="form-label" for="waist">Waist <small>(in cm)</small> </label>
+                                <input class="form-control" type="number" id="waist" step="0.01">
+                            </div>
+                            <div class="input-field-div col-3">
+                                <label class="form-label" for="quads">Quads <small>(in cm)</small> </label>
+                                <input class="form-control" type="number" id="quads" step="0.01">
+                            </div>
+                            <div class="input-field-div col-3">
+                                <label class="form-label" for="calves">Calves <small>(in cm)</small> </label>
+                                <input class="form-control" type="number" id="calves" step="0.01">
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="SubsCriptionInfoFields">
+                        <h2 style="padding: 0.375rem 0.75rem;">Subscription Information</h2>
+                        <div class="form-group subs">
+                            <div class="input-field-div col-1" >
+                                <label class="form-label" for="subs">Plan Name</label>
+                                <input class="form-control" type="text" id="subs" disabled>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
