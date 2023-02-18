@@ -129,6 +129,13 @@ input{
     width: 100%;
     box-sizing: border-box;
 }
+
+.no-spinners::-webkit-outer-spin-button,
+  .no-spinners::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
 /* Grid System */
 .col{
     display: inline-block;
