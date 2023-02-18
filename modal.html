@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="modal.css">
+    <link rel="stylesheet" href="profile.css">
+    <title>Modal</title>
+</head>
+<body>
+    <div class="modal">
+        <div class="modal-header">
+            <h2 class="modal-title" >Change Password</h2>
+            <img src="images/close.png" alt="close icon" id="closeicon">
+        </div>
+        <hr>
+        <div class="modal-body">
+            <div class="form-group standardadd" style="display: block !important;">
+                <div class="input-field-div" style="display: block !important;">
+                    <label class="form-label" for="oldpass">Old Password</label>
+                    <input class="form-control" type="text" id="oldpass">
+                </div>
+                <div class="input-field-div" style="display: block !important;">
+                    <label class="form-label" for="newpass">New Password</label>
+                    <input class="form-control" type="text" id="newpass">
+                </div>
+                <div class="input-field-div " style="display: block !important;">
+                    <label class="form-label" for="confirmpass">Confirm Password</label>
+                    <div class="input-icon">
+                        <input class="form-control" type="password" id="confirmpass">
+                        <div class="icon" onclick="togglePassword()"></div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="modal-footer">
+            <div class="modal-footer-buttons">
+                <button type="button" class="button-outline-grey">Close</button>
+                <button type="button" class="button-outline">Submit</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function togglePassword() {
+        var passwordInput = document.getElementById("confirmpass");
+        var toggleIcon = document.querySelector(".toggle-password i");
+
+        if (passwordInput.type === "password") {
+            passwordInput.type = "text";
+            
+        } else {
+            passwordInput.type = "password";
+        }
+        }
+    </script>
+</body>
+</html>
