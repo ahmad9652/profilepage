@@ -1,0 +1,128 @@
+.NavBar{
+    background-color: brown;
+    padding: 6px;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+@media only screen and (max-width: 750px) {
+    .NavBar{
+        padding: 2vh;
+    }
+    .NavBar-start-section{
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+    .nav-list{
+        display: none !important;
+    }
+    .NavBar-End{
+        display: flex;
+    }
+    .menu-icon div{
+        display: block !important;
+    }
+}
+.NavBar-start-section{
+    display: flex;
+}
+.NavBar-logo {
+    display: inline-block;
+    margin-top: auto;
+    margin-left: 30px;
+    margin-bottom: auto;
+}
+.NavBar-logo a{
+    color: white;
+    text-decoration: none;
+    font-size: xxx-large;
+    font-weight: 400;
+}
+.nav-list{
+    display: flex;
+}
+.nav-link{
+    display: inline-block;
+    margin: auto 3px;
+    color: white;
+    list-style: none;
+}
+.nav-link a{
+    color: white;
+    text-decoration: none;
+    font-size: x-large;
+    font-weight: 400;
+    margin-top: auto;
+    margin: 12px;
+    margin-left: auto;
+}
+.search-input{
+    background-color: white;
+    background-image: url('images/search_icon.png');
+    background-position: left center;
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    padding-left: 35px !important;
+}
+.menu-icon{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.menu-icon div{
+    display: none;
+    width: 35px;
+    height: 5px;
+    background-color: rgb(250, 244, 244);
+    margin: 6px 0;
+    cursor: pointer;
+    
+}
+@media only screen and (min-width: 751px) {
+    .SideBarOuter{
+        display: none !important;
+    }
+}
+.SideBarOuter{
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    /* z-index: 0; */
+}
+.SideBar{
+    width: 70vw;
+    background-color: brown;
+    height: 100%;
+    padding: 2vh;
+}
+.SideBar img{
+    block-size: 7vh;
+}
+#closeicon-sidebar{
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+.SideBar-list{
+    display: block;
+    margin: 5px;
+    padding: 7px;
+}
+.SideBar-link{
+    margin: 15px auto;
+    padding: 13px;
+    list-style: none;
+    border-bottom: 2px solid grey;
+}
+.SideBar-link a{
+    color: white;
+    text-decoration: none;
+    font-size: x-large;
+    font-weight: 400;
+    margin-top: auto;
+    margin: 12px;
+    margin-left: auto;
+}
+

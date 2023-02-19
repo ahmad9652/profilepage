@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="modal.css">
+    <link rel="stylesheet" href="profile.css">
+    <title>Nav-Bar</title>
+</head>
+<body style="margin: 0;">
+    <header>
+        <nav class="NavBar">
+            <div class="NavBar-start-section">
+                <div class="NavBar-logo"><a href="">GymPlus</a></div>
+                <ul class="nav-list">
+                    <li class="nav-link">
+                        <a href="/">Home</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="/">About</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="/">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="NavBar-End">
+                <ul class="nav-list">
+                    <li class="nav-link">
+                        <form action="">
+                            <input type="text" class="form-control search-input">
+                        </form>
+                    </li>
+                    <li class="nav-link">
+                        <button type="button" class="button-outline">Login</button>
+                    </li>
+                    <li class="nav-link">
+                        <button type="button" class="button-outline">SignUp</button>
+                    </li>
+                </ul>
+                <div class="menu-icon" onclick="togglesidebar()">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <aside class="SideBarOuter" id="SideBarOuter" style="display: none;">
+        <div class="SideBar">
+            <div class="NavBar-logo"><a href="">GymPlus</a></div>
+            <img src="images/close.png" alt="close icon" id="closeicon-sidebar" onclick="togglesidebar()">
+            <hr>
+            <ul class="SideBar-list">
+                <li class="SideBar-link">
+                    <a href="/">Home</a>
+                </li>
+                <li class="SideBar-link">
+                    <a href="/">About</a>
+                </li>
+                <li class="SideBar-link">
+                    <a href="/">Contact</a>
+                </li>
+                <li class="SideBar-link" style="border-bottom: 0 !important; margin-bottom: 0 !important; padding-bottom: 4px !important;">
+                    <form action="">
+                        <input type="text" class="form-control search-input">
+                    </form>
+                </li>
+                <li class="SideBar-link" style="margin-top: 0 !important; padding-top: 4px !important;">
+                    <button type="button" class="button-outline">Login</button>
+                    <button type="button" class="button-outline">SignUp</button>
+                </li>
+            </ul>
+        </div>
+    </aside>
+    <script src="navbar.js"></script>
+</body>
+</html>
