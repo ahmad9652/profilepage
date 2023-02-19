@@ -49,14 +49,14 @@
     transform: translateY(-50%);
     width: 30px;
     height: 30px;
-    background-image: url('images/eye.png');
+    background-image: url('../images/eye.png');
     background-size: 30px 30px;
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;
 }
 .input-icon .icon.hide {
-    background-image: url('images/blind.png');
+    background-image: url('../images/blind.png');
 }
 
 .input-icon input[type="password"] {

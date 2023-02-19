@@ -59,7 +59,7 @@
 }
 .search-input{
     background-color: white;
-    background-image: url('images/search_icon.png');
+    background-image: url('../images/search_icon.png');
     background-position: left center;
     background-size: 30px 30px;
     background-repeat: no-repeat;
