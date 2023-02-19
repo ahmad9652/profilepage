@@ -7,6 +7,11 @@
     border-radius: calc(0.5rem - 1px);
     box-shadow: 5px 5px lightslategray;
 }
+@media only screen and (max-width: 600px) {
+    .modal{
+        width: 90vw !important;
+    }
+}
 .modal-header{
     position: relative;
 }
